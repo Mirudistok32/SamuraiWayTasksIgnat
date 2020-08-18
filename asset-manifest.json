@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/SamuraiWayTasksIgnat/static/css/main.6dd61726.chunk.css",
+    "main.js": "/SamuraiWayTasksIgnat/static/js/main.d5b4ca73.chunk.js",
+    "main.js.map": "/SamuraiWayTasksIgnat/static/js/main.d5b4ca73.chunk.js.map",
+    "runtime-main.js": "/SamuraiWayTasksIgnat/static/js/runtime-main.be6199cc.js",
+    "runtime-main.js.map": "/SamuraiWayTasksIgnat/static/js/runtime-main.be6199cc.js.map",
+    "static/js/2.82b56cfd.chunk.js": "/SamuraiWayTasksIgnat/static/js/2.82b56cfd.chunk.js",
+    "static/js/2.82b56cfd.chunk.js.map": "/SamuraiWayTasksIgnat/static/js/2.82b56cfd.chunk.js.map",
+    "index.html": "/SamuraiWayTasksIgnat/index.html",
+    "precache-manifest.12b75f9726c2e810f420bfb7d76c224d.js": "/SamuraiWayTasksIgnat/precache-manifest.12b75f9726c2e810f420bfb7d76c224d.js",
+    "service-worker.js": "/SamuraiWayTasksIgnat/service-worker.js",
+    "static/css/main.6dd61726.chunk.css.map": "/SamuraiWayTasksIgnat/static/css/main.6dd61726.chunk.css.map",
+    "static/js/2.82b56cfd.chunk.js.LICENSE.txt": "/SamuraiWayTasksIgnat/static/js/2.82b56cfd.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.be6199cc.js",
+    "static/js/2.82b56cfd.chunk.js",
+    "static/css/main.6dd61726.chunk.css",
+    "static/js/main.d5b4ca73.chunk.js"
+  ]
+}
