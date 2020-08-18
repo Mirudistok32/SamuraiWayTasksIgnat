@@ -54,6 +54,9 @@ const SuperInputText: React.FC<SuperInputTextPropsType> = (props) => {
     let finalInputClassName = s.forSuperIputText + ` ${className ? className : ''}`;
     finalInputClassName += ` ${error ? s.errorInput : ''}`;
 
+    // Старый код, если раскоментировать решение в HW4, то это не будет работать, так как, всегда пустая строка приходит
+    // const finalInputClassName = error ? s.errorInput : className
+
     return (
         <>
             <input
