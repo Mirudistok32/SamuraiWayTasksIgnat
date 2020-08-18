@@ -1,0 +1,30 @@
+.error {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #2d2d2d;
+  color: snow;
+}
+.error__number {
+  font-size: 500px;
+}
+.error__message {
+  font-size: 50px;
+}
+.error__symbol {
+  font-size: 120px;
+  margin-bottom: 10px;
+}
+.error__redirect {
+  font-size: 30px;
+}
+.error__redirect a {
+  transition: all 0.23s ease-in-out;
+  color: snow;
+  text-shadow: 0 0 20px tomato, 0 0 10px tomato;
+}
+.error__redirect a:hover {
+  color: tomato;
+}

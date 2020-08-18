@@ -3,9 +3,10 @@ html,
 #root {
   box-sizing: border-box;
   min-height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
-  background-color: #2d2d2d27;
+  background-color: #b6aeae;
   font-family: "Roboto", sans-serif;
   text-align: center;
 }
