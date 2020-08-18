@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2b199268dca03b2a78069f225e72ee8f",
+    "revision": "3e374ff2facd21bc6442ae40ebf6358b",
     "url": "/SamuraiWayTasksIgnat/index.html"
   },
   {
-    "revision": "3a832bdfe98a94ed9ea8",
-    "url": "/SamuraiWayTasksIgnat/static/css/main.4a81c2b6.chunk.css"
+    "revision": "2a1994e49ca99e8d067c",
+    "url": "/SamuraiWayTasksIgnat/static/css/main.cf595af0.chunk.css"
   },
   {
     "revision": "c2b5c790fd2c6c180a7a",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/SamuraiWayTasksIgnat/static/js/2.d72f1225.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3a832bdfe98a94ed9ea8",
-    "url": "/SamuraiWayTasksIgnat/static/js/main.19e771ac.chunk.js"
+    "revision": "2a1994e49ca99e8d067c",
+    "url": "/SamuraiWayTasksIgnat/static/js/main.5ff31665.chunk.js"
   },
   {
     "revision": "111ee37fe2d1508f7bf8",
