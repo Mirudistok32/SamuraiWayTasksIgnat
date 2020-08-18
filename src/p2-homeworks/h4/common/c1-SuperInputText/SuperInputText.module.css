@@ -1,0 +1,20 @@
+.errorInput {
+  box-shadow: 0 0 0 1px #2d2d2d, 0 0 5px 2px red;
+}
+
+.error {
+  color: red;
+}
+
+.forSuperIputText {
+  padding: 5px 10px;
+  border-style: none;
+  border-radius: 15px;
+  margin: 20px 0 5px;
+  width: 100%;
+  box-shadow: 0 0 0 1px #2d2d2d, 0 0 5px 0 #2d2d2d;
+}
+.forSuperIputTextSpan {
+  display: flex;
+  align-self: flex-start;
+}

@@ -1,0 +1,20 @@
+.affairs {
+  text-align: center;
+}
+.affairs__btn {
+  padding: 5px 10px;
+  border-style: none;
+  cursor: pointer;
+  margin: 5px;
+  background-color: snow;
+  border-radius: 3px;
+  color: #2d2d2d;
+  border: 1px solid transparent;
+  transition: all 0.23s ease-in-out;
+}
+.affairs__btn:hover {
+  border: 1px solid #2d2d2d;
+}
+.active {
+  background-color: tomato;
+}

@@ -1,0 +1,36 @@
+.affair {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.affair__name {
+  background-color: #2d2d2d;
+  color: snow;
+  display: block;
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px 0;
+  margin-right: 5px;
+  transition: all 0.23s ease-in-out;
+}
+.affair__name:hover {
+  box-shadow: 0 0 10px 0 #2d2d2d, 0 0 0 1px snow;
+}
+.affair__btn {
+  display: block;
+  padding: 5px 20px;
+  border-style: none;
+  border-radius: 5px;
+  background-color: transparent;
+  /* border: 1px solid snow; */
+  box-shadow: inset 0 0 0 1px snow;
+  cursor: pointer;
+  transition: all 0.23s ease-in-out;
+}
+.affair__btn:hover {
+  background-color: #2d2d2d;
+  color: snow;
+  box-shadow: 0 0 10px 0 #2d2d2d, 0 0 0 1px snow;
+}
