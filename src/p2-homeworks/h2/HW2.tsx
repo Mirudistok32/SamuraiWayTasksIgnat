@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import Affairs from "./Affairs";
+import { v4 } from "uuid";
 
 // types
 export type AffairPriorityType = 'high' | "low" | "middle"; // need to fix any
 export type AffairType = {
-    _id: number
+    _id: string
     name: string
     priority: FilterType
 }; // need to fix any
@@ -13,11 +14,15 @@ export type FilterType = "all" | AffairPriorityType;
 
 // constants
 const defaultAffairs: Array<AffairType> = [ // need to fix any
-    { _id: 1, name: "React-high", priority: "high" },
-    { _id: 2, name: "anime-low", priority: "low" },
-    { _id: 3, name: "games-low", priority: "low" },
-    { _id: 4, name: "work-high", priority: "high" },
-    { _id: 5, name: "html & css-middle", priority: "middle" },
+    { _id: v4(), name: "HTML, CSS, JS, TS", priority: "high" },
+    { _id: v4(), name: "React, Redux,", priority: "high" },
+    { _id: v4(), name: "Hooks, Formik", priority: "high" },
+    { _id: v4(), name: "JEST, Storybook, ANT design, Git", priority: "low" },
+    { _id: v4(), name: "REST API, redux thunk", priority: "high" },
+    { _id: v4(), name: "Pure function", priority: "middle" },
+    { _id: v4(), name: "React.PureComponent, React.memo, React.lazy, React.Suspense", priority: "middle" },
+    { _id: v4(), name: "FLUX, HOC, DOM, VIRTUAL DOM,", priority: "high" },
+    { _id: v4(), name: "Select, reselect, redux-ducks", priority: "low" },
 ];
 
 // pure helper functions
@@ -35,7 +40,7 @@ export const filterAffairs = (affairs: Array<AffairType>, filter: FilterType): A
             return affairs
     }
 }
-export const deleteAffair = (affairs: Array<AffairType>, _id: number): Array<AffairType> => { // need to fix any
+export const deleteAffair = (affairs: Array<AffairType>, _id: string): Array<AffairType> => { // need to fix any
     return affairs.filter(a => a._id !== _id); // need to fix
 }
 
@@ -45,7 +50,7 @@ function HW2() {
     const [filter, setFilter] = useState<FilterType>("all");
 
     const filteredAffairs = filterAffairs(affairs, filter);
-    const deleteAffairCallback = (_id: number) => setAffairs(deleteAffair(affairs, _id)); // need to fix any
+    const deleteAffairCallback = (_id: string) => setAffairs(deleteAffair(affairs, _id)); // need to fix any
 
     return (
         <div>

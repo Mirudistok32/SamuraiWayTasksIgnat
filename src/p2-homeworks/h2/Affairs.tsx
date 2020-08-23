@@ -6,7 +6,7 @@ import { AffairType, FilterType } from "./HW2";
 type AffairsPropsType = { // need to fix any
     data: Array<AffairType>
     setFilter: (filter: FilterType) => void
-    deleteAffairCallback: (_id: number) => void
+    deleteAffairCallback: (_id: string) => void
     filter: FilterType
 }
 
