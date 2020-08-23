@@ -23,6 +23,8 @@ const defaultAffairs: Array<AffairType> = [ // need to fix any
     { _id: v4(), name: "React.PureComponent, React.memo, React.lazy, React.Suspense", priority: "middle" },
     { _id: v4(), name: "FLUX, HOC, DOM, VIRTUAL DOM,", priority: "high" },
     { _id: v4(), name: "Select, reselect, redux-ducks", priority: "low" },
+    { _id: v4(), name: "DAL, API, BLL, UI", priority: "low" },
+    { _id: v4(), name: "Babel, Webpack, Yarn, NPM", priority: "low" },
 ];
 
 // pure helper functions
