@@ -32,7 +32,7 @@ function HW4() {
         if (error) {
             alert("введите текст...");
         } else {
-            alert(text);
+            text ? alert(text) : alert('введите текст...'); 
             //Затераю поле value
             setText('')
         }
