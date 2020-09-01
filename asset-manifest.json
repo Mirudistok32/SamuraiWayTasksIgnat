@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/SamuraiWayTasksIgnat/static/css/main.2b8dc498.chunk.css",
-    "main.js": "/SamuraiWayTasksIgnat/static/js/main.f61d6aee.chunk.js",
-    "main.js.map": "/SamuraiWayTasksIgnat/static/js/main.f61d6aee.chunk.js.map",
+    "main.js": "/SamuraiWayTasksIgnat/static/js/main.fb29679e.chunk.js",
+    "main.js.map": "/SamuraiWayTasksIgnat/static/js/main.fb29679e.chunk.js.map",
     "runtime-main.js": "/SamuraiWayTasksIgnat/static/js/runtime-main.be6199cc.js",
     "runtime-main.js.map": "/SamuraiWayTasksIgnat/static/js/runtime-main.be6199cc.js.map",
     "static/js/2.2b67ca9e.chunk.js": "/SamuraiWayTasksIgnat/static/js/2.2b67ca9e.chunk.js",
     "static/js/2.2b67ca9e.chunk.js.map": "/SamuraiWayTasksIgnat/static/js/2.2b67ca9e.chunk.js.map",
     "index.html": "/SamuraiWayTasksIgnat/index.html",
-    "precache-manifest.2b79ded9bb74aadeeaa958efcb983250.js": "/SamuraiWayTasksIgnat/precache-manifest.2b79ded9bb74aadeeaa958efcb983250.js",
+    "precache-manifest.f747cdbad0a9039cc6bfb765e43f036f.js": "/SamuraiWayTasksIgnat/precache-manifest.f747cdbad0a9039cc6bfb765e43f036f.js",
     "service-worker.js": "/SamuraiWayTasksIgnat/service-worker.js",
     "static/css/main.2b8dc498.chunk.css.map": "/SamuraiWayTasksIgnat/static/css/main.2b8dc498.chunk.css.map",
     "static/js/2.2b67ca9e.chunk.js.LICENSE.txt": "/SamuraiWayTasksIgnat/static/js/2.2b67ca9e.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.be6199cc.js",
     "static/js/2.2b67ca9e.chunk.js",
     "static/css/main.2b8dc498.chunk.css",
-    "static/js/main.f61d6aee.chunk.js"
+    "static/js/main.fb29679e.chunk.js"
   ]
 }
