@@ -21,7 +21,6 @@ function HW7() {
             </div>
             <div>
                 <SuperRadio
-                    type={'radio'}
                     name={"radio"}
                     options={arr}
                     value={value}
