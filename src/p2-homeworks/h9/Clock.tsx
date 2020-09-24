@@ -50,7 +50,10 @@ function Clock() {
     //
     // Но я так же повесил обработчики и на дисплей с stringDate
     return (
-        <div>
+        <div
+            className={s.date + ` ${show ? s.date__active : ""}`}
+        >
+            <span className={s.date__title}>Big Ben</span>
             <div
                 title={isTitle ? stringDate : ''}
                 className={s.date__stringTime}
@@ -67,9 +70,10 @@ function Clock() {
                     onMouseLeave={onMouseLeave}
                     className={s.date__display}
                 >
-                    <span className={s.date__hour}>{stringHour}</span>:
-                    <span className={s.date__minuts}>{stringMinuts}</span>:
-                    <span className={s.date__seconds}>{stringSecond}</span>
+                    {/* Когда доходит до 59, то дальше все равно появляется на секунд 0, не придумал что с этим делать*/}
+                    <span className={s.date__hour}>{stringHour && stringHour < 10 ? `0${stringHour}` : stringHour}</span>:
+                    <span className={s.date__minuts}>{stringMinuts && stringMinuts < 10 ? `0${stringMinuts}` : stringMinuts}</span>:
+                    <span className={s.date__seconds}>{stringSecond && stringSecond < 10 ? `0${stringSecond}` : stringSecond}</span>
                 </div>
             )}
 
