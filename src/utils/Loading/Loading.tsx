@@ -7,13 +7,15 @@ type PropsType = {
 
 export const Loading: React.FC<PropsType> = React.memo((props) => {
 
-    const { size } = props
+    const { size = 40 } = props
+    const sizeStyle = size + "px"
+
     return (
         <div>
             <div className={s.loader}>
-                <div className={s.ball}></div>
-                <div className={s.ball}></div>
-                <div className={s.ball}></div>
+                <div className={s.ball} style={{ height: sizeStyle, width: sizeStyle }}></div>
+                <div className={s.ball} style={{ height: sizeStyle, width: sizeStyle }}></div>
+                <div className={s.ball} style={{ height: sizeStyle, width: sizeStyle }}></div>
             </div>
             <svg className={s.svg}
                 xmlns="http://www.w3.org/2000/svg" version="1.1">
