@@ -1,6 +1,29 @@
-.date{
-    &__hour{}
-    &__minuts{}
-    &__seconds{}
-    &__display{}
+.date {
+  &__stringTime {
+    font-size: 3em;
+  }
+  &__display {
+    font-size: 5em;
+    font-weight: 500;
+    span {
+      color: snow;
+      display: inline-block;
+      margin: 10px;
+      letter-spacing: 0.1em;
+      text-shadow: -0 -2px 2px #000000, 0 -2px 2px #000000, -0 2px 2px #000000,
+        0 2px 2px #000000, -2px -0 2px #000000, 2px -0 2px #000000,
+        -2px 0 2px #000000, 2px 0 2px #000000, -1px -2px 2px #000000,
+        1px -2px 2px #000000, -1px 2px 2px #000000, 1px 2px 2px #000000,
+        -2px -1px 2px #000000, 2px -1px 2px #000000, -2px 1px 2px #000000,
+        2px 1px 2px #000000, -2px -2px 2px #000000, 2px -2px 2px #000000,
+        -2px 2px 2px #000000, 2px 2px 2px #000000, -2px -2px 2px #000000,
+        2px -2px 2px #000000, -2px 2px 2px #000000, 2px 2px 2px #000000;
+    }
+  }
+  &__hour {
+  }
+  &__minuts {
+  }
+  &__seconds {
+  }
 }

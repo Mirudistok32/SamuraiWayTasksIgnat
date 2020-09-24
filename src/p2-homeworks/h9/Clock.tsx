@@ -6,13 +6,17 @@ function Clock() {
     const [timerId, setTimerId] = useState<number>(0);
     const [date, setDate] = useState<Date>();
     const [show, setShow] = useState<boolean>(false);
+
+    // Состояние для появления title при наведении на stringTime
     const [isTitle, setIsTitle] = useState<boolean>(false)
 
+    //У меня стоп полностью все зачищает и надо по новой начинать
     const stop = () => {
         setTimerId(0)
         window.clearInterval(timerId)
     }
     const start = () => {
+        // Вот тут stop вызывается, поэтому не очень понял как его правильно нужно реализовать. 
         stop();
         const id: number = window.setInterval(() => {
             setShow(true)
@@ -28,13 +32,28 @@ function Clock() {
         setIsTitle(false)
     };
 
-    const stringTime = timerId.toString();
-    const stringDate = date?.toString();
 
+    // Не понял что с этим делать? т.е. это только для вывода на экран?
+    // Или тут что-то другое надо было написать?
+    // Когда кликаю на кнопку старт, то тут всегда число идет на увеличение, на 3 всегда
+    const stringTime = timerId.toString();
+
+    const stringDate = date?.toString()
+    // Свой переменные объявил для лаконичного вывода времени.
+    // Кстати, реакт же не отслеживает изменение этих переменных? они изменяются только из-за вызова setInterval?
+    // Такие переменные относятся к state или это просто переменные? 
+    const stringHour = date?.getHours()
+    const stringMinuts = date?.getMinutes()
+    const stringSecond = date?.getSeconds()
+
+    // Обработчики весят на stringTime, поэтому я сделал при наведении на него, будет title появляться
+    //
+    // Но я так же повесил обработчики и на дисплей с stringDate
     return (
         <div>
             <div
-                title={isTitle ? stringDate : ""}
+                title={isTitle ? stringDate : ''}
+                className={s.date__stringTime}
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
             >
@@ -42,10 +61,15 @@ function Clock() {
             </div>
 
             {show && (
-                <div className={s.date__display}>
-                    <span className={s.date__hour}></span>
-                    <span className={s.date__minuts}></span>
-                    <span className={s.date__seconds}></span>
+                <div
+                    title={isTitle ? stringDate : ''}
+                    onMouseEnter={onMouseEnter}
+                    onMouseLeave={onMouseLeave}
+                    className={s.date__display}
+                >
+                    <span className={s.date__hour}>{stringHour}</span>:
+                    <span className={s.date__minuts}>{stringMinuts}</span>:
+                    <span className={s.date__seconds}>{stringSecond}</span>
                 </div>
             )}
 
