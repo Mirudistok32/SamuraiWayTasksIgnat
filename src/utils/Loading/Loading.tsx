@@ -3,19 +3,20 @@ import s from './Loading.module.scss'
 
 type PropsType = {
     size?: number
+    color?: string
 }
 
 export const Loading: React.FC<PropsType> = React.memo((props) => {
 
-    const { size = 40 } = props
+    const { size = 40, color = 'dodgerblue' } = props
     const sizeStyle = size + "px"
 
     return (
         <div className={s.loader__wrap}>
             <div className={s.loader}>
-                <div className={s.ball} style={{ height: sizeStyle, width: sizeStyle }}></div>
-                <div className={s.ball} style={{ height: sizeStyle, width: sizeStyle }}></div>
-                <div className={s.ball} style={{ height: sizeStyle, width: sizeStyle }}></div>
+                <div className={s.ball} style={{ height: sizeStyle, width: sizeStyle, backgroundColor: color }}></div>
+                <div className={s.ball} style={{ height: sizeStyle, width: sizeStyle, backgroundColor: color }}></div>
+                <div className={s.ball} style={{ height: sizeStyle, width: sizeStyle, backgroundColor: color }}></div>
             </div>
             <svg className={s.svg}
                 xmlns="http://www.w3.org/2000/svg" version="1.1">
