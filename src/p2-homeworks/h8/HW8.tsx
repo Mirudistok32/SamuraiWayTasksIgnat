@@ -51,4 +51,4 @@ function HW8() {
     );
 }
 
-export default HW8;
+export default React.memo(HW8);

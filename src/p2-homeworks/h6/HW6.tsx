@@ -35,4 +35,4 @@ function HW6() {
     );
 }
 
-export default HW6;
+export default React.memo(HW6);

@@ -41,4 +41,4 @@ const SuperRadio: React.FC<SuperRadioPropsType> = (
     );
 }
 
-export default SuperRadio;
+export default React.memo(SuperRadio);

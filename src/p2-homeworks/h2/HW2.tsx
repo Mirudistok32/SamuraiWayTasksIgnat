@@ -78,4 +78,4 @@ function HW2() {
     );
 }
 
-export default HW2;
+export default React.memo(HW2);

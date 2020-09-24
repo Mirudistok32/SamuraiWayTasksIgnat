@@ -10,7 +10,7 @@ export type MessageType = {
     link?: string
 }
 
-export function Message({ avatar, name, message, time, link = "https://github.com/Mirudistok32" }: MessageType) {
+export const Message = React.memo(({ avatar, name, message, time, link = "https://github.com/Mirudistok32" }: MessageType) => {
     return (
         <div className={s.message}>
             {/* Я не знаю, что значат атрибуты rel - у ссылок. 
@@ -30,4 +30,4 @@ export function Message({ avatar, name, message, time, link = "https://github.co
             </div>
         </div>
     );
-}
+})

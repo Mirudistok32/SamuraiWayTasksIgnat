@@ -84,4 +84,4 @@ function Clock() {
     );
 }
 
-export default Clock;
+export default React.memo(Clock);

@@ -18,4 +18,4 @@ function HW9() {
     );
 }
 
-export default HW9;
+export default React.memo(HW9);

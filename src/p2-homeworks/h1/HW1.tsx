@@ -32,4 +32,4 @@ function HW1() {
     );
 }
 
-export default HW1;
+export default React.memo(HW1);

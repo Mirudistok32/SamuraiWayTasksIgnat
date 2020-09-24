@@ -26,4 +26,4 @@ const SuperButton: React.FC<SuperButtonPropsType> = (props) => {
     );
 }
 
-export default SuperButton;
+export default React.memo(SuperButton);

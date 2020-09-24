@@ -36,4 +36,4 @@ const SuperSelect: React.FC<SuperSelectPropsType> = (
     );
 }
 
-export default SuperSelect;
+export default React.memo(SuperSelect);

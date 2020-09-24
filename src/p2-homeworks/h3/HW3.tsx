@@ -36,4 +36,4 @@ function HW3() {
     );
 }
 
-export default HW3;
+export default React.memo(HW3);

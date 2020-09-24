@@ -36,4 +36,4 @@ function HW10() {
     );
 }
 
-export default HW10;
+export default React.memo(HW10);

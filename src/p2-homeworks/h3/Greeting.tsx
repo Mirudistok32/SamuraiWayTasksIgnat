@@ -52,4 +52,4 @@ const Greeting: React.FC<GreetingPropsType> = (
     );
 }
 
-export default Greeting;
+export default React.memo(Greeting);

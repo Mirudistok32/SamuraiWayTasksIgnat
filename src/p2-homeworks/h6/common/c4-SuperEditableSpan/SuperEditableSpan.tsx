@@ -74,4 +74,4 @@ const SuperEditableSpan: React.FC<SuperEditableSpanType> = (
     );
 }
 
-export default SuperEditableSpan;
+export default React.memo(SuperEditableSpan);

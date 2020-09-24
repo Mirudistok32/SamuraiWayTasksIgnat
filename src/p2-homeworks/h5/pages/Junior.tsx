@@ -6,7 +6,7 @@ import HW4 from "../../h4/HW4";
 import HW6 from "../../h6/HW6";
 import HW7 from "../../h7/HW7";
 
-export function Junior() {
+export const Junior = React.memo(() => {
     return (
         <div>
             <HW1 />
@@ -17,4 +17,4 @@ export function Junior() {
             <HW7 />
         </div>
     );
-}
+})

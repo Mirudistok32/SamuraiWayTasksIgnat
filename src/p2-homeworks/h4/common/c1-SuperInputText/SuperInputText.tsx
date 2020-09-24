@@ -72,4 +72,4 @@ const SuperInputText: React.FC<SuperInputTextPropsType> = (props) => {
     );
 }
 
-export default SuperInputText;
+export default React.memo(SuperInputText);

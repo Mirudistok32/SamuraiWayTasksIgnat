@@ -37,4 +37,4 @@ function HW7() {
     );
 }
 
-export default HW7;
+export default React.memo(HW7);

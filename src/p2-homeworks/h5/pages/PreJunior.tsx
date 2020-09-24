@@ -12,4 +12,4 @@ function PreJunior() {
     );
 }
 
-export default PreJunior;
+export default React.memo(PreJunior);
