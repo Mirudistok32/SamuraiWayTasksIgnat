@@ -15,7 +15,7 @@ function HW10() {
         dispatch(loadingAC(true))
         window.setTimeout(() => {
             dispatch(loadingAC(false))
-        }, 2000)
+        }, 5000)
         console.log("loading...");
     };
 
@@ -26,8 +26,14 @@ function HW10() {
 
             {/*should work (должно работать)*/}
             {
-                !isLoading
-                    ? <Loading /> : (
+                isLoading
+                    ?
+                    (
+                        <div className={s.hw10__loading}>
+                            <Loading size={20} />
+                        </div>
+                    )
+                    : (
                         <div>
                             <SuperButton onClick={setLoading}>set loading...</SuperButton>
                         </div>

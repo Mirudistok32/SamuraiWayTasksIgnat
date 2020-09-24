@@ -1,4 +1,10 @@
 .hw10 {
   position: relative;
   background-color: floralwhite;
+  padding: 2px;
+  &__loading {
+    padding: 20px;
+    max-width: 100px;
+    margin: 0 auto;
+  }
 }
