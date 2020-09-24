@@ -27,7 +27,7 @@ function HW10() {
                     </div>
                 )
             }
-            <Loading />
+            {/* <Loading /> */}
             <hr />
             {/*для личного творчества, могу проверить*/}
             {/*<Alternative/>*/}
