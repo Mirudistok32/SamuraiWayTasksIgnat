@@ -1,5 +1,3 @@
-import { type } from "os";
-
 const initState = {
     isLoading: false
 };
@@ -7,15 +5,14 @@ const initState = {
 type InitialStateType = typeof initState
 type ActionsType = LoadingACType
 
-export const loadingReducer = (state = initState, action: ActionsType): InitialStateType => { 
+export const loadingReducer = (state = initState, action: ActionsType): InitialStateType => {
     switch (action.type) {
         case "HW10/LOADING": {
-
-            return state;
+            return { ...state, ...action.payload };
         }
         default: return state;
     }
 };
 
 type LoadingACType = ReturnType<typeof loadingAC>
-export const loadingAC = () => ({ type: "HW10/LOADING", } as const); 
+export const loadingAC = (isLoading: boolean) => ({ type: "HW10/LOADING", payload: { isLoading } } as const); 

@@ -11,7 +11,7 @@ export const Loading: React.FC<PropsType> = React.memo((props) => {
     const sizeStyle = size + "px"
 
     return (
-        <div>
+        <div className={s.loader__wrap}>
             <div className={s.loader}>
                 <div className={s.ball} style={{ height: sizeStyle, width: sizeStyle }}></div>
                 <div className={s.ball} style={{ height: sizeStyle, width: sizeStyle }}></div>
