@@ -1,0 +1,18 @@
+.people {
+  max-width: 200px;
+  text-align: left;
+  padding: 10px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  background-color: skyblue;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: seagreen;
+    box-shadow: 0 0 10px 1px #000, 1px 1px 10px 1px #000;
+  }
+  span {
+    margin-right: 10px;
+  }
+}
