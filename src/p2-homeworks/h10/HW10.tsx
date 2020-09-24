@@ -1,4 +1,5 @@
 import React from "react";
+import { Loading } from "../../utils/Loading/Loading";
 import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 
 function HW10() {
@@ -13,24 +14,24 @@ function HW10() {
 
     return (
         <div>
-            <hr/>
+            <hr />
             homeworks 10
 
             {/*should work (должно работать)*/}
             {loading
                 ? (
-                    <div>крутилка...</div>
+                    <Loading />
                 ) : (
                     <div>
                         <SuperButton onClick={setLoading}>set loading...</SuperButton>
                     </div>
                 )
             }
-
-            <hr/>
+            {/* <Loading /> */}
+            <hr />
             {/*для личного творчества, могу проверить*/}
             {/*<Alternative/>*/}
-            <hr/>
+            <hr />
         </div>
     );
 }

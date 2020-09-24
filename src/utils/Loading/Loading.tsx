@@ -1,7 +1,13 @@
 import React from 'react'
 import s from './Loading.module.scss'
 
-export const Loading = () => {
+type PropsType = {
+    size?: number
+}
+
+export const Loading: React.FC<PropsType> = React.memo((props) => {
+
+    const { size } = props
     return (
         <div>
             <div className={s.loader}>
@@ -21,5 +27,5 @@ export const Loading = () => {
             </svg>
         </div>
     )
-}
+})
 
