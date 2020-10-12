@@ -1,0 +1,44 @@
+.hw11 {
+  @import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap");
+  &__slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  &__slider-label {
+    width: 30px;
+    font-size: 2em;
+    font-family: "Comic Neue", cursive;
+    font-weight: 400;
+  }
+  &__slider-title {
+    display: inline-block;
+    font-size: 2em;
+  }
+  &__range {
+    width: 500px;
+    margin: 0 auto;
+  }
+  &__range-box {
+    margin: 0 auto;
+    width: 400px;
+    display: flex;
+    align-items: center;
+  }
+  &__range-label {
+    display: inline-block;
+    width: 50px;
+    font-size: 2em;
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    margin: 0px 15px;
+  }
+  &__range-title {
+    display: inline-block;
+    font-size: 2em;
+  }
+}
