@@ -19,7 +19,7 @@ function HW11() {
             homeworks 11
 
             <div className={s['hw11__slider']}>
-                <span  className={s['hw11__slider-title']}>Range</span>
+                <span className={s['hw11__slider-title']}>Range</span>
                 <div className={s['hw11__slider-box']}>
                     <span className={s['hw11__slider-label']}>{value1}</span>
                     <SuperRange

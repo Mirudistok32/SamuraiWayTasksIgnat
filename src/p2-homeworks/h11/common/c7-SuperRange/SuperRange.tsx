@@ -94,6 +94,7 @@ const SuperRange: React.FC<SuperRangePropsType> = (
     return (
         <>
             <MySlider
+                className={className}
                 value={value}
                 defaultValue={value}
                 onChange={onChangeHandler}
