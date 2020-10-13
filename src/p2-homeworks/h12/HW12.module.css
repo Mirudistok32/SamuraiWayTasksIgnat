@@ -1,23 +1,48 @@
+.span{
+    margin-right: 50px;
+}
+
 .dark {
-    background: dimgrey;
+  background: dimgrey;
 }
 
 .dark-text {
-    color: aliceblue;
+  color: aliceblue;
 }
 
 .red {
-    background: lightcoral;
+  background: lightcoral;
 }
 
 .red-text {
-    color: aqua;
+  color: aqua;
 }
 
 .some {
-    background: lightgreen;
+  background: lightgreen;
 }
 
 .some-text {
-    color: darkslateblue;
+  color: darkslateblue;
+}
+
+.darkturquoise {
+  background-color: darkturquoise;
+}
+.darkturquoise-text {
+  color: mediumslateblue;
+}
+
+.deepskyblue {
+  background-color: deepskyblue;
+}
+.deepskyblue-text {
+  color: aliceblue;
+}
+
+.hotpink {
+  background-color: hotpink;
+}
+.hotpink-text {
+  color: navy;
 }
